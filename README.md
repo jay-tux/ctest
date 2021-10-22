@@ -134,28 +134,28 @@ int main() {
 
 ### Macros
 - *Function-like macros*
- - `ASSERT_NULL(v1, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 != NULL`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_NNULL(v1, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 == NULL`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_EQUAL(v1, v2, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 != v2`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_GREATER(v1, v2, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 <= v2`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_SMALLER(v1, v2, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 >= v2`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_GREATEREQ(v1, v2, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 < v2`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_SMALLEREQ(v1, v2, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1 > v2`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_TRUE(v1, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `!v1`. If `fatal == TRUE`, aborts the test.
- - `ASSERT_FALSE(v1, fatal, err, ...)`  
-   Prints `err` as format string, with substitution in `...` if `v1`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_NULL(v1, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 != NULL`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_NNULL(v1, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 == NULL`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_EQUAL(v1, v2, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 != v2`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_GREATER(v1, v2, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 <= v2`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_SMALLER(v1, v2, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 >= v2`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_GREATEREQ(v1, v2, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 < v2`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_SMALLEREQ(v1, v2, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1 > v2`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_TRUE(v1, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `!v1`. If `fatal == TRUE`, aborts the test.
+  - `ASSERT_FALSE(v1, fatal, err, ...)`  
+    Prints `err` as format string, with substitution in `...` if `v1`. If `fatal == TRUE`, aborts the test.
 
 - *Value Macros:*
- - `#define FALSE 0`
- - `#define TRUE 1`
+  - `#define FALSE 0`
+  - `#define TRUE 1`
 
 ### Functions
  - `void start_test(const char *test)`  
