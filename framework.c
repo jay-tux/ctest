@@ -110,6 +110,7 @@ const char *_str_sgl(sig_e sgl) {
 XSIGNALS
 #undef X
   }
+  return "SIG_UNKNOWN";
 }
 
 void catch_sig(sig_e sgl) {
