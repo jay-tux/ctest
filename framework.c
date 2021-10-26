@@ -108,6 +108,7 @@ const char *_str_sgl(sig_e sgl) {
 #define STR(x) XSTR(x)
 #define X(s_n, s_o) case s_n: return STR(s_n) "/" #s_o;
 XSIGNALS
+    case SIG_CATCHALL: return "shouldn't occur, lemme know if this actually happens cause that means something is screwed :(";
 #undef X
   }
   return "SIG_UNKNOWN";
