@@ -15,6 +15,7 @@
    - [Types](./README.md#types)
    - [Macros](./README.md#macros)
    - [Functions](./README.md#functions)
+ - [FAQ](./README.md#faq)
 
 ## Features
  - Easy to use
@@ -176,3 +177,7 @@ int main() {
    Unmutes the standard output stream (ends the redirection).
  - `void unmute_stderr()`  
    Unmutes the standard error stream (ends the redirection).
+
+## FAQ
+**When trying to compile, I get this weird error: `error: expected expression before ‘)’ token`. How to solve?**  
+All the macros (starting with `ASSERT_`) require you to give printf-arguments. The formatting string __should__ contain format specifiers (`%d` and the like) and should have arguments to fill. [Hint: if you're an adept coder, feel free to make and issue & pull request, thank you very much!]
